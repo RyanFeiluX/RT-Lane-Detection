@@ -1,6 +1,11 @@
 # RT-Lane-Detection
 Support realtime deep neural network lane detection in Windows platform. It is on top of repository [Ultra-Fast-Lane-Detection](https://github.com/cfzd/Ultra-Fast-Lane-Detection) and paper  "[Ultra Fast Structure-aware Deep Lane Detection](https://arxiv.org/abs/2004.11757)".
-The baseline repository implemented CULane & Tusimple datasets oriented training and inference. Wherein target frames are extracted from target video based on specific pattern. As a result, a group of images are prepared as input to model for training or inference. This repository adds another approach for interfence. It is realtime getting image from a target video and then input to the model. The approach remove the step in which all target images are retrieved and placed in your disk. At least, the approach simplifies inference workload in Windows platform. Of course, it can be easily extended to training and the other platforms on needed basis.
+
+The baseline repository implemented CULane & Tusimple datasets oriented training and inference. Wherein target frames are extracted from target video based on specific pattern. As a result, a group of images are prepared as input to model for training or inference. 
+
+This repository adds another approach for interference. It is realtime getting image from a target video and then input to the model. The approach remove the step in which all target images are retrieved and placed in your disk. It streamlines the video capture and frame inference. New option --video-in is used to indicate target video. At least, the approach simplifies inference workload in Windows platform. New option --video-out is designed to export the labeled video or not. 
+
+Of course, it can be easily extended to training and the other platforms on needed basis.
 
 # Running
 A new dataset category is added for the new approach. The command can be like:
