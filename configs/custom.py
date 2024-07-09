@@ -41,4 +41,4 @@ test_work_dir = None
 num_lanes = 4
 
 # Preprocess: x1_crop, x2_crop, y1_crop, y2_crop
-crop = [(0.0, 1.0), (0.2, 0.55)]
+crop = [(0.0, 1.0), (0.25, 0.58)]
