@@ -32,7 +32,7 @@ class CustomLoader:
         return None
 
     def get_frameprops(self, path):
-        assert os.path.exists(path), '%s does not exist.'
+        assert os.path.exists(path), '%s does not exist.' % path
         vformat = os.path.splitext(path)[1]
         assert vformat in ['.mp4', '.avi'], 'Unrecognized video format %s' % vformat
 
